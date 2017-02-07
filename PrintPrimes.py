@@ -1,33 +1,23 @@
-function PrintPrimeNumberInARange(n):
+def PrintPrimeNumberInARange(n):
 
-for num in range(0,n):
+	for num in range (0,n+1):
 
-	if num>1:
+		if num>0:
 
-	for i in range (2,n):
-            
-        if i==2:
+			for a in range(1,num):
 
-			print i
+				if num%2==0 and num!=2:
 
-		elif i==3:
+					break
 
-			print i
+				elif num%3==0 and num!=3:
 
-		elif i%2==0 && i>2:
+					break
 
-			break
+				elif num>n:
 
-		elif i%3==0 && i>3:
+					break
 
-			break
+				else:
 
-		else:
-
-			print num
-
-    
-
-
-
-
+					print num
